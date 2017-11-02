@@ -1,0 +1,93 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/bahilogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+    <LinearLayout
+        android:id="@+id/imG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+        <ImageView
+            android:id="@+id/pic1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bahi1"
+             />
+
+        <ImageView
+            android:id="@+id/pic2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bahi2"
+            android:layout_toRightOf="@id/pic1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/description"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/pic3"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bah3"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/description"
+            android:layout_toRightOf="@id/pic1"/>
+        <ImageView
+            android:id="@+id/pic4"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bah4"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/pic1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:text="Bahi"
+        android:fontFamily="@font/playfair_display_italic"
+        android:textSize="36sp"/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/website"
+        android:textColor="#000000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:fontFamily="@font/playfair_display_regular"
+        android:text="Bahi's goal is to create a new standard for the cosmetics industry. We want natural ingredients that work for all women to become the norm, in order to provide high-end products at a reasonable cost."
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textColor="#000000"
+        android:fontFamily="@font/playfair_display_regular"
+        android:text="bahi.care"
+        android:paddingBottom="15dp"
+        android:textSize="25sp"/>
+</RelativeLayout>
